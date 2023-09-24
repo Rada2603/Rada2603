@@ -22,6 +22,8 @@ def main():
             Name = input("name")
             Password = input("password")
             Agent.check_agent(Name, Password)
+            if not  Agent.check_agent(Name, Password):
+                continue
             while True:
                 print("Select an option")
                 print("1.Logout")
@@ -30,8 +32,11 @@ def main():
                 print("4.Deleting an engagement")
                 option_a = input("Select an option")
                 print(f"option_a:{option_a}")
-                if  check_option_a(option_a):
-                    continue
+                print("===========")
+                if not check_option_a(option_a):
+                   print("pogresno")
+                break
+                   
         if option == "b":
             Name = input("name")
             Password = input("password")
