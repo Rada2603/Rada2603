@@ -34,7 +34,7 @@ def main():
                 print(f"option_a:{option_a}")
                 print("===========")
                 if not check_option_a(option_a):
-                   print("pogresno")
+                    print("pogresno")
                 break
                    
         if option == "b":
