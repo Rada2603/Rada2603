@@ -6,9 +6,9 @@ from utils import check_option_a
 
 def main():
     print("\nWelcome to agency")
-    Agent = Agents(r"c:\Users\Lenovo\Documents\Rada\Learning_1\agencija\data\agents.txt")
+    Agent = Agents(r"data\agents.txt")
     Agent.initialise_users()
-    Client = Clients(r"C:\Users\Lenovo\Documents\Rada\Learning_1\agencija\data\agents.txt")
+    Client = Clients(r"data\agents.txt")
     Client.initialise_users()
     while True:
         print("____please login___")
