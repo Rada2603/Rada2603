@@ -1,10 +1,8 @@
 class User:
-    def __init__(self, names, surname, name, password, many):
+    def __init__(self, names, surname, name, password):
         self.names = names
         self.surname = surname
         self.name = name
-        self.password = password
-        self.many = many
+        self.password = password   
 
-    def __str__(self) -> str:
-        return f"{self.names}-{self.surname}-{self.name}-{self.password}-{self.many}"
+   
