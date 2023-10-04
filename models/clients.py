@@ -7,7 +7,7 @@ class Client(User):
         self.money = money
 
     def __str__(self) -> str:
-        return f"{self.names}-{self.surname}-{self.name}-{self.password}-{self.money}"   
+        return f"{self.names}-{self.surname}-{self.name}-{self.password}-{self.money}"
 
 
 class Clients:
@@ -25,7 +25,9 @@ class Clients:
     def initialise_client(self):
         f = open(self.path_to_file, "r")
         for a in f:
-            client = Client(a.split()[0], a.split()[1], a.split()[2], a.split()[3], a.split()[4])
+            client = Client(
+                a.split()[0], a.split()[1], a.split()[2], a.split()[3], a.split()[4]
+            )
             self.add_client(client)
 
     def check_client(self, name_c: str, password_c: str) -> User:
@@ -35,4 +37,3 @@ class Clients:
                 return True
         else:
             print(">>>>wrong\n")
-            

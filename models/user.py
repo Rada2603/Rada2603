@@ -3,6 +3,4 @@ class User:
         self.names = names
         self.surname = surname
         self.name = name
-        self.password = password   
-
-   
+        self.password = password

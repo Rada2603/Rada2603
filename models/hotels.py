@@ -1,5 +1,6 @@
 from models.hotel import Hotel
 
+
 class Hotels:
     def __init__(self, path_to_file) -> None:
         self.list_of_hotel = []
@@ -15,12 +16,20 @@ class Hotels:
     def initialise_hotel(self):
         f = open(self.path_to_file, "r")
         for h in f:
-            hotel = Hotel(h.split('-')[0], h.split('-')[1], h.split('-')[2], h.split('-')[3], h.split('-')[4])
+            hotel = Hotel(
+                h.split("-")[0],
+                h.split("-")[1],
+                h.split("-")[2],
+                h.split("-")[3],
+                h.split("-")[4],
+            )
             self.add_hotel(hotel)
 
     def find_hotels(self, surface_1) -> Hotel:
         for hotel in self.list_of_hotel:
             if hotel.surface == surface_1:
-                return Hotel(hotel.surface, hotel.beds, hotel.type, hotel.adress, hotel.stars)
+                return Hotel(
+                    hotel.surface, hotel.beds, hotel.type, hotel.adress, hotel.stars
+                )
         else:
-            print("wrong")       
+            print("wrong")

@@ -1,7 +1,6 @@
 class Transport_device:
-    def __init__(self, meal, starting_address, final_address):
+    def __init__(self, meal, starting_address, final_address, classes):
         self.meal = meal
         self.starting_address = starting_address
         self.final_address = final_address
-     
-    
+        self.clases = classes

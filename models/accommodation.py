@@ -4,6 +4,6 @@ class Accommodation:
         self.beds = beds
         self.type = type
         self.adress = adress
-        
+
     def __str__(self) -> str:
-        return f"{self.surface}-{self.beds}-{self.type}-{self.adress}-{self.stars}"
+        return f"{self.surface}-{self.beds}-{self.type}-{self.adress}"

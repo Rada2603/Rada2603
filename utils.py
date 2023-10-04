@@ -4,8 +4,8 @@ def check_option(option: str) -> bool:
     else:
         print("\n>>>Wrong choice\n")
         return False
-    
-    
+
+
 def check_option_a(option_a: str) -> bool:
     try:
         if int(option_a) < 1 or int(option_a) > 4:
@@ -16,7 +16,7 @@ def check_option_a(option_a: str) -> bool:
     except Exception:
         print(">>>>>wrong\n")
         return False
-    
+
 
 def check_option_c(option_c: str) -> bool:
     try:
@@ -28,5 +28,3 @@ def check_option_c(option_c: str) -> bool:
     except Exception:
         print(">>>>>wrong\n")
         return False
-
-
