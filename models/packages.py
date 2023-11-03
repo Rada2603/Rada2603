@@ -12,11 +12,6 @@ class Packages:
         for package in self.list_package:
             print(package)
     
-    def find_package(self, nomber_k) -> Createarggament:
-        for package in self.list_package:
-            if int(package.nomber) == int(nomber_k):
-                package.nomber == str(int(package.nomber))
-                print("1111111")
-                return Createarggament(package.nomber, package.acommodate, package.transport)
+    
                 
                 
